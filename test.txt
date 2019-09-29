@@ -1,0 +1,7 @@
+process: init
+PID: 1
+Process State: 1
+Priority: 120
+RT_Priority: 0
+Static_Priority: 120
+Mornal Priority: 120

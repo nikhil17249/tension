@@ -1,0 +1,55 @@
+Common subdirectories: old/arch and new/arch
+Common subdirectories: old/block and new/block
+Only in new: .config
+Only in new: .config.old
+Common subdirectories: old/crypto and new/crypto
+Only in new: debian
+Common subdirectories: old/Documentation and new/Documentation
+Common subdirectories: old/drivers and new/drivers
+Common subdirectories: old/firmware and new/firmware
+Common subdirectories: old/fs and new/fs
+Common subdirectories: old/include and new/include
+Common subdirectories: old/init and new/init
+Common subdirectories: old/ipc and new/ipc
+Common subdirectories: old/kernel and new/kernel
+Common subdirectories: old/lib and new/lib
+diff -u old/Makefile new/Makefile
+--- old/Makefile	2019-07-24 00:13:18.000000000 +0530
++++ new/Makefile	2019-09-29 16:26:37.560401000 +0530
+@@ -852,7 +852,7 @@
+ 
+ 
+ ifeq ($(KBUILD_EXTMOD),)
+-core-y		+= kernel/ mm/ fs/ ipc/ security/ crypto/ block/
++core-y		+= kernel/ mm/ fs/ ipc/ security/ crypto/ block/ sh_task_info/
+ 
+ vmlinux-dirs	:= $(patsubst %/,%,$(filter %/, $(init-y) $(init-m) \
+ 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
+Only in new: .missing-syscalls.d
+Common subdirectories: old/mm and new/mm
+Only in new: modules.builtin
+Only in new: modules.order
+Only in new: Module.symvers
+Common subdirectories: old/net and new/net
+Common subdirectories: old/samples and new/samples
+Common subdirectories: old/scripts and new/scripts
+Common subdirectories: old/security and new/security
+Only in new: sh_task_info
+Only in new: signing_key.priv
+Only in new: signing_key.x509
+Common subdirectories: old/sound and new/sound
+Only in new: System.map
+Only in new: .tmp_kallsyms1.o
+Only in new: .tmp_kallsyms2.o
+Only in new: .tmp_System.map
+Only in new: .tmp_versions
+Only in new: .tmp_vmlinux1
+Only in new: .tmp_vmlinux2
+Common subdirectories: old/tools and new/tools
+Common subdirectories: old/usr and new/usr
+Only in new: .version
+Common subdirectories: old/virt and new/virt
+Only in new: vmlinux
+Only in new: .vmlinux.cmd
+Only in new: vmlinux.o
+Only in new: x509.genkey
